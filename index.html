@@ -18,7 +18,7 @@
         <h1>{{ title }}</h1>
         <template>
             <ul>
-                <li>{{ mails }}</li>
+                <li v-for="mail in mails" v-if="(mails.length > 9) ">{{ mail }}</li>
                 
             </ul>
         </template>
